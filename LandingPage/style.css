@@ -1,0 +1,36 @@
+body{
+	background-color: #ADD8E6;
+}
+h1{
+	text-align: center;
+
+}
+p{
+	text-align: center;
+}
+img{
+	border-radius: 200px;
+	margin-left: 150px;
+}
+.redes{
+
+}
+.redes a{
+	text-align: center;
+	font-family: Open Sans;
+	color: white;
+	font-size: 32px;
+	color:#0034f0; 
+}
+.redes li{
+	background-color: #0034f0;
+	margin: 10px;
+	color: white;
+	border-radius: 20px;
+	list-style: none;
+}
+main{
+margin-right: auto;
+margin-left:auto;
+width: 30%;
+}

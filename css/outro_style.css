@@ -1,0 +1,145 @@
+/*TODO
+É necessário tirar essas benditas underlines que estão na barra de navegação
+É necessário é criar 3 boxes contendo projetos
+É necessário mudar o fundo do cartão, em um estilo bem mais DNA
+
+22-04-2024 Eu pretendo fazer uma função de responsividade
+
+05-05-2024 Eu pretendo criar um pequeno menu que surge ao apertar
+em VER MAIS utilizando apenas CSS
+*/
+
+
+body{
+	background-color:#141414 ;
+	color: white;
+	margin: 0px;
+
+}
+/*CONFIGURAÇÕES DA BARRA DE NAVEGAÇÃO*/
+header{
+	background-color: #5c5c5c;
+	height: 300px;
+}
+nav{	
+	text-decoration: none;
+	width:auto;
+}
+nav li{
+	color: white;
+}
+
+.navigation_box{
+	display:flex;
+	font-size:32px;
+	justify-content:space-around;
+	list-style: none;
+	width:100%;
+	
+}
+.seemore{
+	display: none;
+}
+/************************************/
+/*CONFIGURAÇÕES DO CARTÃO IDENTIFICADOR*/
+.idcard{
+	background-color:black;
+	box-shadow: -1px 1px 30px red;
+	height:600px;
+	margin: 100px;
+	width: auto;
+}
+.umbrella_logo{
+	margin-left: 1200px; 
+	width:	200px;
+}
+.idcard_photo{
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 200px;
+}
+.employer_description{
+	color: white;
+	font-size:24px ;
+	margin-left: 30px;
+	text-align: left;
+	width: auto;
+}
+.employer_name{
+	color: white;
+	margin-left: 30px;
+	text-align: left;
+	width: 700px;
+}
+.employer_info{
+	color: white;
+	font-size: 24px; 
+	margin: 0px;
+}
+/********************************************/
+/*FORMATAÇÃO DOS ITENS DA SEÇÃO DE PROJETOS*/
+.projects_title{
+	display: flex;
+	justify-content: space-around;
+	text-shadow: 1px 1px 5px black ;
+}
+.projects_container{
+	display: flex;
+	height:300px;
+	justify-content: space-around;
+	list-style: none;
+	text-align: center;
+}
+.projects{
+	width: 450px;
+}
+.projects_cover{
+	height:300px;
+	width: auto;
+}
+/*************************/
+footer{
+	height: 300px;
+}
+/*CONFIGURAÇÕES DE RESPONSIVIDADE SMARTPHONE*/
+@media (max-width:600px){
+	.navigation_box{
+		display: block;
+	}
+	.umbrella-logo_header{
+		width:200px;
+		height:200px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+	}
+	nav{
+		height: 30px;
+	}
+	.navigation_box{
+		text-align: center;
+	}	
+	/*CRIAÇÃO DO MENU AO CLICAR "EM VER MAIS"*/
+	.navigation_box li, .navigation_box a{
+		font-size:20px;
+		color:#5c5c5c;
+		list-style: ;
+	}
+	.seemore{
+		display: block;
+		text-align: center;
+	}
+
+/*MUDA A COR DA PRIMEIRA OPÇÂO DA LISTA*/
+/*	input:checked + label + a > li{
+		color: white;
+*/
+	}
+	input:checked + label + a > nav{
+		color: white;
+
+	}
+
+}
+
