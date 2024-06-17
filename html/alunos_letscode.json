@@ -1,0 +1,30 @@
+{
+	"alunos_letscode":[
+	{"Nome":"Gilson Junio Sales Andrade",
+	"Idade":22,
+	"Cidade":"Ilha Grande",
+	"Imagem": ""
+	}, 
+	{"Nome":"João",
+	"Idade":19,
+	"Cidade":"Camocim",
+	"Imagem": ""
+	}, 
+	{"Nome":"Luana",
+	"Idade":21,
+	"Cidade":"Parnaíba",
+	"Imagem": ""
+	}, 
+	{"Nome":"Beatriz",
+	"Idade":26,
+	"Cidade":"Xique-xique",
+	"Imagem": ""
+	}, 
+	{	
+	"Nome":"Gabriela",
+	"Idade":21,
+	"Cidade":"Ilha Grande",
+	"Imagem": ""
+	}]
+
+}
