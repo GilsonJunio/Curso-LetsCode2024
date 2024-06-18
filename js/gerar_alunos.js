@@ -1,34 +1,54 @@
-const div = document.getElementById("lista-de-alunos");
-
-async function carregarDados() {
-  const response = await fetch("https://github.com/GilsonJunio/Curso-LetsCode2024/blob/master/html/alunos_letscode.json");
-  const data = await response.json();
-  const alunos = data.alunos_letscode;
-
-
-  alunos.map((aluno) => {
-    let h3 = document.createElement("h3");
-    h3.textContent = alunos.nome;
-
-    let descricao = document.createElement("p");
-    descricao.textContent = aluno.descricao;
-
-    let cidade = document.createElement("p");
-    cidade.textContent = aluno.cidade;
-
-    let idade = document.createElement("p");
-    idade.innerHTML = `Idade: ${alunos.idade}`;
-
-    let bandeira = document.createElement("img");
-    bandeira.setAttribute("src", alunos.imagem);
-    bandeira.setAttribute("width", "100px");
-
-    div.appendChild(h3);
-    div.appendChild(bandeira);
-    div.appendChild(descricao);
-    div.appendChild(clima);
-    div.appendChild(habitantes);
-    div.appendChild(area);
-  });
-}
-carregarDados();
+const alunos = [{
+  "nome":Amazonas,
+  "sigla":AM,
+  "nome":Piauí,
+  "sigla":PI,
+  "nome":Ceará,
+  "sigla":CE,
+  "nome":Distrito Federal,
+  "sigla":DF,
+  "nome":Pernambuco,
+  "sigla":PE,
+  "nome":São Paulo,
+  "sigla":SP,
+  "nome":Goiás,
+  "sigla":GO,
+  "nome":Bahia,
+  "sigla":BA,
+  "nome":Sergipe,
+  "sigla":SE,
+  "nome"Maranhão:,
+  "sigla":MA,
+  "nome":Paraíba,
+  "sigla":PB,
+  "nome":Rio Grande do Norte,
+  "sigla":,
+  "nome":Alagoas,
+  "sigla":AL,
+  "nome":Roraima,
+  "sigla":RR,
+  "nome":Acre,
+  "sigla":AC,
+  "nome":Rondônia,
+  "sigla":RO,
+  "nome":Amapá,
+  "sigla":AM,
+  "nome":Pará,
+  "sigla":PR,
+  "nome":Paraná,
+  "sigla":PA,  
+  "nome":Tocantins,
+  "sigla":TO,  
+  "nome":Mato Grosso do Sul,
+  "sigla":MS,  
+  "nome":Mato Grosso,
+  "sigla":MT,  
+  "nome":Minas Gerais,
+  "sigla":MG,  
+  "nome":Santa Catarina,
+  "sigla":SC,  
+  "nome":Rio Grande do Sul,
+  "sigla":RS,  
+  "nome":Rio de Janeiro,
+  "sigla":RJ,  
+},]
