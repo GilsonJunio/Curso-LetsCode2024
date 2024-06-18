@@ -1,4 +1,3 @@
-const lista = document.getElementById("listaAlunos");
 const alunos = [
   {"nome":"Amazonas","sigla":"AM"
   },
@@ -105,7 +104,14 @@ const alunos = [
 
 //Agora vou mapear os elementos do array
 alunos.map( (lista_mapeada) => {
-  console.log(lista_mapeada)
+//  console.log(lista_mapeada) // Verificando se está tudo okay
+  
+
+  const lista = document.getElementById("listaAlunos");
+  const nomeDoAluno = lista_mapeada.nome;
+  console.log(nomeDoAluno)
+  listaAlunos.appendChild(nomeDoAluno)
+
 })
 
 
