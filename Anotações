@@ -8,3 +8,11 @@ Aprendi que o método appenChild() aceita somente objetos como argumentos, isso 
   		listaAlunos.appendChild(nomeDoAluno)
   	}
  Simplesmente não funciona. Além disso, substituir "listaAlunos.appendChild(nomeDoAluno)" por "listaAlunos.appendChild(lista_mapeada)" também não funciona. Porquê? Preciso averiguar depois
+
+
+19-06-2024
+ async function (){
+ 	const response = await fetch();
+ 	const
+
+ }

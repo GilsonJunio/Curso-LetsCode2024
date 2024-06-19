@@ -1,5 +1,6 @@
-const alunos = [
-  {"nome":"Amazonas","sigla":"AM"
+const estados = [
+  {"nome":"Amazonas",
+  "sigla":"AM"
   },
   {
     "nome":"Piauí",
@@ -102,8 +103,43 @@ const alunos = [
     "sigla":"RJ"
   }];
 
+const alunos = [
+  {"nome":"Gilson",
+  "idade":"AM",
+  "cidade":""
+  },
+  {"nome":"Luana",
+  "idade":"AM",
+  "cidade":""
+  },
+  {"nome":"Gabi",
+  "idade":"AM",
+  "cidade":""
+  },
+  {"nome":"Bia",
+  "idade":"AM",
+  "cidade":""
+  },
+  {"nome":"Alessandra",
+  "idade":"AM",
+  "cidade":""
+  },
+  {"nome":"João",
+  "idade":"AM",
+  "cidade":""
+  },  
+  {"nome":"Jonatas",
+  "idade":"AM",
+  "cidade":""
+  },  
+  {"nome":"Gabi",
+  "idade":"AM",
+  "cidade":""
+  }];
+
+
 /*Agora vou mapear os elementos do array*/
-alunos.map( (lista_mapeada) => {
+estados.map( (lista_mapeada) => {
 
 /*
 Após ter os elementos do array alunos mapeados em lista_mapeada,   
@@ -114,12 +150,14 @@ crio outra constante nomeDoAluno para criar um h2 e atribuo um texto que é refe
 
 
 /*PARTE QUE FUNCIONA*/
-  const lista_pagina = document.getElementById("listaAlunos");
-  const nomeDoAluno = document.createElement('h2')
-  nomeDoAluno.textContent = lista_mapeada.nome
-
-
-/*---------COMPARAÇÃO---------*/
+  const lista_pagina = document.getElementById("listaEstados");
+  const nomeDoEstado = document.createElement('h2')
+//  nomeDoEstado.textContent = lista_mapeada.nome
+//  lista_pagina.appendChild = nomeDoEstado
+console.log(lista_pagina)
+console.log(nomeDoEstado)
+//console.log(nomeDoEstado)
+/*---------COMPARAÇÃO---------
 //CODIGO 1
   const a = lista_mapeada.nome
 //  lista_pagina.appendChild(a) // a não é um objeto,
@@ -128,8 +166,8 @@ crio outra constante nomeDoAluno para criar um h2 e atribuo um texto que é refe
   const b = document.createElement('h1')
   b.textContent = lista_mapeada.nome
   lista_pagina.appendChild(b)
-/*---------COMPARAÇÃO---------*/
-console.log(a)
+---------COMPARAÇÃO---------*/
+//console.log(a)
 
 
 
