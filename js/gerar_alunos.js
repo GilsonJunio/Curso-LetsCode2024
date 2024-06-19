@@ -102,15 +102,45 @@ const alunos = [
     "sigla":"RJ"
   }];
 
-//Agora vou mapear os elementos do array
+/*Agora vou mapear os elementos do array*/
 alunos.map( (lista_mapeada) => {
-//  console.log(lista_mapeada) // Verificando se está tudo okay
-  
 
-  const lista = document.getElementById("listaAlunos");
-  const nomeDoAluno = lista_mapeada.nome;
-  console.log(nomeDoAluno)
-  listaAlunos.appendChild(nomeDoAluno)
+/*
+Após ter os elementos do array alunos mapeados em lista_mapeada,   
+atribuo o elemento com ID listaAlunos à constante lista_pagina;
+crio outra constante nomeDoAluno para criar um h2 e atribuo um texto que é referenciado pelo objeto lista_mapeada.nome;
+*/
+
+
+
+/*PARTE QUE FUNCIONA*/
+  const lista_pagina = document.getElementById("listaAlunos");
+  const nomeDoAluno = document.createElement('h2')
+  nomeDoAluno.textContent = lista_mapeada.nome
+
+
+/*---------COMPARAÇÃO---------*/
+//CODIGO 1
+  const a = lista_mapeada.nome
+//  lista_pagina.appendChild(a) // a não é um objeto,
+
+//CODIGO2
+  const b = document.createElement('h1')
+  b.textContent = lista_mapeada.nome
+  lista_pagina.appendChild(b)
+/*---------COMPARAÇÃO---------*/
+console.log(a)
+
+
+
+//  console.log(lista_mapeada) // Verificando se está tudo okay
+//  const nomeDoAluno = lista_mapeada.nome;
+//  const lista_de_alunos = lista_mapeada
+//  console.log(nomeDoAluno)
+//  nomeDoAluno.textContent = lista_mapeada.nome;
+//  console.log(length(lista_mapeada.length)
+//  listaAlunos.appendChild(nomeDoAluno)
+//  listaAlunos.appendChild()
 
 })
 
