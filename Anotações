@@ -1,0 +1,10 @@
+Anotações
+
+Aprendi que o método appenChild() aceita somente objetos como argumentos, isso quer dizer que códigos como:
+	const alunos = [...,]
+	alunos.map( (lista_mapeada) => {
+		const lista = document.getElementById("listaAlunos");
+  		const nomeDoAluno = lista_mapeada.nome;
+  		listaAlunos.appendChild(nomeDoAluno)
+  	}
+ Simplesmente não funciona. Além disso, substituir "listaAlunos.appendChild(nomeDoAluno)" por "listaAlunos.appendChild(lista_mapeada)" também não funciona. Porquê? Preciso averiguar depois
