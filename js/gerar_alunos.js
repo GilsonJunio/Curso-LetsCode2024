@@ -137,64 +137,46 @@ const alunos = [
   "cidade":""
   }];
 
+/*Aqui vou mapear os elementos do array*/
+estados.map((lista_mapeada_estados) => {
 
-/*Agora vou mapear os elementos do array*/
-estados.map( (lista_mapeada) => {
-
+const lista_de_estados = document.getElementById("listaEstados");
+  const nomeDoEstado = document.createElement('h2');
+    nomeDoEstado.textContent = lista_mapeada_estados.nome;
+  lista_de_estados.appendChild(nomeDoEstado)
+});
 /*
-Após ter os elementos do array alunos mapeados em lista_mapeada,   
-atribuo o elemento com ID listaAlunos à constante lista_pagina;
-crio outra constante nomeDoAluno para criar um h2 e atribuo um texto que é referenciado pelo objeto lista_mapeada.nome;
+Os elementos do array "estados" são mapeados em 
+"lista_mapeada_estados"
+
+Atribuo o elemento com ID "listaEstados" à constante 
+"lista_de_estados";
+
+Crio uma constante nomeDoEstado para criar um h2; 
+Atribuo um texto em "nomeDoEstado" que é referenciado 
+pelo objeto "lista_mapeada_estados.nome";
 */
 
 
+/*Aqui vou mapear os elementos do array*/
+alunos.map((lista_mapeada_alunos) => {
+  const lista_de_alunos = document.getElementById("listaAlunos");
+  const nomeDoAluno = document.createElement('h2');
+    nomeDoAluno.textContent = lista_mapeada_alunos.nome;
 
-/*PARTE QUE FUNCIONA*/
-  const lista_pagina = document.getElementById("listaEstados");
-  const nomeDoEstado = document.createElement('h2')
-//  nomeDoEstado.textContent = lista_mapeada.nome
-//  lista_pagina.appendChild = nomeDoEstado
-console.log(lista_pagina)
-console.log(nomeDoEstado)
-//console.log(nomeDoEstado)
-/*---------COMPARAÇÃO---------
-//CODIGO 1
-  const a = lista_mapeada.nome
-//  lista_pagina.appendChild(a) // a não é um objeto,
+  lista_de_alunos.appendChild(nomeDoAluno)
+  console.log(lista_mapeada_alunos)
+});
+/*
+Os elementos do array "alunos" são mapeados em 
+"lista_mapeada_alunos"
 
-//CODIGO2
-  const b = document.createElement('h1')
-  b.textContent = lista_mapeada.nome
-  lista_pagina.appendChild(b)
----------COMPARAÇÃO---------*/
-//console.log(a)
+Atribuo o elemento com ID "listaAlunos" à constante 
+"lista_de_alunos";
 
-
-
-//  console.log(lista_mapeada) // Verificando se está tudo okay
-//  const nomeDoAluno = lista_mapeada.nome;
-//  const lista_de_alunos = lista_mapeada
-//  console.log(nomeDoAluno)
-//  nomeDoAluno.textContent = lista_mapeada.nome;
-//  console.log(length(lista_mapeada.length)
-//  listaAlunos.appendChild(nomeDoAluno)
-//  listaAlunos.appendChild()
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Crio uma constante "nomeDoAluno" para criar um h2; 
+Atribuo um texto em "nomeDoAluno" que é referenciado 
+pelo objeto "lista_mapeada_alunos.nome";
+*/
 
 
