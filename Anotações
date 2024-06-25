@@ -11,8 +11,8 @@ Aprendi que o método appenChild() aceita somente objetos como argumentos, isso 
 
 
 19-06-2024
- async function (){
+ async function funcao(){
  	const response = await fetch();
- 	const
+ 	const data = response.results
 
  }
