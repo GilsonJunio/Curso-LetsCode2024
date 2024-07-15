@@ -1,0 +1,31 @@
+		.pp{
+			border-radius: 190px;
+			border: 5px slateblue;
+			margin-left: 120px;
+
+		}
+		.pp_box{
+
+			height: 850px;
+			box-shadow:pink 0px 10px 50px;
+			margin-left: 900px;
+			width: 600px;
+		}
+		.top_color{
+			background-color:#007FFF;
+			height:200px; 
+			width:auto;
+		}
+		.bottom_color{
+			background-color: #1F305E;
+			height:350px;
+		}
+		.pp_name{
+			text-align:center;
+		}
+		.pp_description{
+			font-size: 50px ;
+			text-align: center;
+			color:white; 
+		}		
+
